@@ -176,10 +176,10 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(28px, 6vw, 80px); align-items: start; }
 .contact h2 { margin-bottom: 18px; }
 .contact .lead { color: #d9e2dd; margin-bottom: 0; }
-form { background: var(--paper); color: var(--graphite); padding: clamp(20px, 3vw, 34px); border: 1.5px solid var(--graphite); box-shadow: 8px 8px 0 rgba(0,0,0,.28); display: grid; gap: 4px; }
+form { background: var(--paper); color: var(--graphite); padding: clamp(20px, 3vw, 34px); border: 1.5px solid var(--graphite); box-shadow: 8px 8px 0 rgba(0,0,0,.28); display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; min-width: 0; }
 label { font: 600 14px var(--sans); margin-top: 12px; }
 label .opt { font-weight: 400; color: var(--graphite-soft); }
-input, select, textarea { width: 100%; font: 400 16px var(--sans); padding: 12px 13px; border: 1.5px solid var(--graphite-soft); background: #fff; color: var(--graphite); border-radius: 0; }
+input, select, textarea { width: 100%; min-width: 0; max-width: 100%; font: 400 16px var(--sans); padding: 12px 13px; border: 1.5px solid var(--graphite-soft); background: #fff; color: var(--graphite); border-radius: 0; }
 input:focus, select:focus, textarea:focus { outline: 3px solid var(--terra-soft); border-color: var(--terra); }
 .field-error { color: var(--terra); font-size: 13px; min-height: 0; }
 .invalid { border-color: var(--terra); }
