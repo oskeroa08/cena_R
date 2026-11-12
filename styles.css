@@ -16,10 +16,10 @@
   --wrap: 1180px;
   --gutter: clamp(18px, 4vw, 40px);
   /* Единая шкала текста */
-  --fs-intro: 19px;   /* вводные абзацы разделов */
-  --fs-body: 17px;    /* основной текст и списки */
-  --fs-sm: 16px;      /* описания в карточках, плитках, строках */
-  --fs-note: 13px;    /* подписи к примерам */
+  --fs-body: 18px;              /* весь основной текст: абзацы, списки, описания в карточках */
+  --fs-intro: var(--fs-body);
+  --fs-sm: var(--fs-body);
+  --fs-note: 13px;              /* подписи к примерам */
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
@@ -85,7 +85,7 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
 .hero h1 em { font-style: normal; color: var(--terra); }
 .hero-copy p { color: #343a3d; margin: 0 0 14px; }
-.hero-copy .lead { font-size: clamp(18px, 2vw, 21px); margin: 22px 0 14px; }
+.hero-copy .lead { font-size: var(--fs-body); margin: 22px 0 14px; }
 .hero-q { font: 600 clamp(24px, 3vw, 32px)/1.25 var(--serif); margin: 22px 0 16px; max-width: 30ch; }
 .hero-copy .hero-q { color: var(--graphite); }
 .flow { font-size: 14px; letter-spacing: .08em; color: var(--teal); margin: 22px 0 26px; line-height: 1.7; }
@@ -232,7 +232,7 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
   .nav .btn { margin-top: 14px; justify-content: center; border: 0; }
 }
 @media (max-width: 560px) {
-  :root { --fs-intro: 18px; --fs-body: 16px; --fs-sm: 15px; }
+  :root { --fs-body: 17px; }
   .sec-head { grid-template-columns: 1fr; gap: 6px; }
   .sec-head p { grid-column: 1; }
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
