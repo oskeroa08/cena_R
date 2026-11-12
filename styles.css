@@ -246,3 +246,37 @@ form .btn { justify-content: center; margin-top: 10px; }
 .bar b { font-weight: 600; white-space: nowrap; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 @media (max-width: 560px) { .bar { grid-template-columns: 1fr auto; } .bar span { grid-column: 1 / -1; } }
+
+/* ---------- Редакция 2: заголовки, форма, согласие, политика ---------- */
+.h1-long { font-size: clamp(32px, 4.4vw, 56px); line-height: 1.15; }
+.hero-copy p { max-width: 58ch; color: #343a3d; margin: 0 0 14px; font-size: 18px; }
+.hero-copy .lead { font-size: clamp(18px, 2vw, 21px); margin: 22px 0 14px; }
+.hero-copy .flow { color: var(--teal); margin: 22px 0 26px; }
+.hero-copy .hero-actions { margin-top: 24px; }
+.hero-q { font: 600 clamp(24px, 3vw, 34px)/1.25 var(--serif) !important; color: var(--graphite) !important; margin: 22px 0 16px !important; max-width: 30ch !important; }
+.ledger-q { font: 600 17px/1.35 var(--serif); margin: 16px 0 4px; }
+.band { padding: clamp(44px, 6vw, 80px) 0; }
+.table-wrap .table.table-text { min-width: 0; }
+.table.table-text th, .table.table-text td { text-align: left; font-family: var(--sans); vertical-align: top; padding: 13px 12px; font-size: 16px; }
+.table.table-text td:first-child { font-weight: 600; width: 32%; }
+.legal { max-width: 780px; }
+.legal h2 { font-size: 24px; margin: 38px 0 12px; }
+.legal ul, .legal ol { padding-left: 22px; margin: 0 0 1em; }
+.legal li { margin-bottom: 4px; }
+.footer .req { font-size: 13px; line-height: 1.6; color: #aeb3b2; }
+.hint { font-size: 13px; color: var(--graphite-soft); min-height: 0; }
+.hint:empty { display: none; }
+.channel { display: flex; flex-wrap: wrap; gap: 4px 24px; margin-top: 12px; }
+.lbl { font: 600 14px var(--sans); width: 100%; }
+label.radio { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; margin-top: 4px; cursor: pointer; }
+.radio input { width: 20px; height: 20px; padding: 0; accent-color: var(--terra); }
+textarea { resize: none; height: 150px; overflow-y: auto; line-height: 1.45; }
+.count { display: flex; justify-content: flex-end; font: 500 12px var(--mono); color: var(--graphite-soft); margin-top: 2px; }
+.count.near { color: var(--terra); font-weight: 600; }
+.consent-text { max-height: 150px; overflow-y: auto; border: 1.5px solid var(--line); background: #fff; padding: 12px 14px; font-size: 13px; line-height: 1.5; margin-top: 16px; }
+.consent-text p { margin: 0 0 8px; }
+.consent-text p:last-child { margin: 0; }
+.consent span { font-weight: 600; font-size: 15px; }
+.policy-link { font-size: 14px; margin: 0 0 4px 36px; }
+.max-link { font-size: 14px; margin-top: 6px; color: var(--terra); font-weight: 600; }
+.max-link[hidden] { display: none; }
