@@ -32,8 +32,8 @@ body {
 img, svg { max-width: 100%; display: block; }
 a { color: inherit; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; margin: 0; letter-spacing: -.01em; }
-h1 { font-size: clamp(32px, 4.4vw, 56px); line-height: 1.15; }
-h2 { font-size: clamp(28px, 4vw, 46px); }
+h1 { font-size: clamp(32px, 4.4vw, 56px); line-height: 1.15; text-wrap: balance; }
+h2 { font-size: clamp(28px, 4vw, 46px); text-wrap: balance; }
 h3 { font-size: clamp(19px, 2vw, 22px); line-height: 1.25; }
 p { margin: 0 0 1em; }
 main p { max-width: 70ch; }
@@ -86,8 +86,8 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 .hero h1 em { font-style: normal; color: var(--terra); }
 .hero-copy p { color: #343a3d; margin: 0 0 14px; }
 .hero-copy .lead { font-size: var(--fs-body); margin: 22px 0 14px; }
-.hero-q { font: 600 clamp(24px, 3vw, 32px)/1.25 var(--serif); margin: 22px 0 16px; max-width: 30ch; }
-.hero-copy .hero-q { color: var(--graphite); }
+.hero-q { font: 600 clamp(22px, 2.4vw, 26px)/1.3 var(--serif); margin: 28px 0 18px; max-width: 34ch; }
+.hero-copy .hero-q { color: var(--graphite); margin: 28px 0 18px; }
 .flow { font-size: 14px; letter-spacing: .08em; color: var(--teal); margin: 22px 0 26px; line-height: 1.7; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 24px; }
 .hero-facts { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 30px 0 0; padding: 0; list-style: none; font: 500 14px var(--mono); color: var(--graphite-soft); }
